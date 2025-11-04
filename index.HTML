@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa das Pizzas - Canoinhas SC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+        header {
+           
+            background-color: #5e0c0c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2c0b06;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            color: #b22222;
+        }
+        .cardapio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .pizza {
+            background-color: #fff;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            padding: 15px;
+            width: calc(33% - 40px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .pizza h3 {
+            margin-top: 0;
+            color: #d2691e;
+        }
+        footer {
+            background-color: #b22222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .pizza {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Casa das Pizzas</h1>
+        <p>As melhores pizzas de Canoinhas - SC!</p>
+    </header>
+
+    <nav>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+        <section id="cardapio">
+            <h2>🍕 Cardápio</h2>
+            <div class="cardapio">
+                <div class="pizza">
+                    <h3>Margherita</h3>
+                    <img src="imagem/pizza marguerita.webp" alt=""  width="300" height="200">>
+                    <p>Molho de tomate, mussarela, tomate e manjericão.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Calabresa</h3>
+                    <img src="imagem/pizza calabresa.jpg" alt="" width="300" height="200">
+                    <p>Molho de tomate, mussarela, calabresa e cebola.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Quatro Queijos</h3>
+                    <img src="imagem/quatro queijos.webp" alt="" width="300" height="200">
+                    <p>Mussarela, parmesão, provolone e gorgonzola.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Frango com Catupiry</h3>
+                    <img src="imagem/pizza de Frango.jpg" alt="" width="300" height="200">
+                    <p>Frango desfiado com catupiry cremoso.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Portuguesa</h3>
+                    <img src="imagem/pizza-portuguesa.jpg" alt="" width="300" height="200">
+                    <p>Presunto, ovos, cebola, azeitona e pimentão.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Vegetariana</h3>
+                    <img src="imagem/pizza-vegetariana.webp" alt="" width="300" height="200">
+                    <p>Legumes grelhados, milho, ervilha e mussarela.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Doce - Chocolate com Morango</h3>
+                    <img src="imagem/pizza chocolate.jpg" alt="" width="300" height="200">
+                    <p>Chocolate derretido e morangos frescos.</p>
+                </div>
+                <div class="pizza">
+                    <h3>Doce - Banana com Canela</h3>
+                    <img src="imagem/pizza banana.jpg" alt=""  width="300" height="200">
+                    <p>Banana, açúcar e canela em massa fina.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="localizacao" style="margin-top: 40px;">
+            <h2>📍 Localização</h2>
+            <p>Estamos localizados no centro de <strong>Canoinhas - SC</strong>.</p>
+            <p>Endereço Rua João Da Cruz Kreiling, 831, Canoinhas, Santa Catarina, Brasil, 89460-154/SC</p>
+        </section>
+
+        <section id="contato" style="margin-top: 40px;">
+            <h2>📞 Contato</h2>
+            <p>Telefone: (47)9963-12284</p>
+            <p>Email: contato@casadaspizzas.com.br</p>
+            <p>Instagram: @casadaspizzas_oficial</p>
+            <p>WhatsApp:(47)9963-12284</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Casa das Pizzas - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa das Pizzas - Canoinhas SC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d62828;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        nav {
+            background-color: #f77f00;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #d62828;
+            margin-top: 40px;
+        }
+
+        .cardapio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .pizza {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: calc(33% - 20px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .pizza img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .pizza h3 {
+            margin: 10px;
+            color: #b22222;
+        }
+
+        .pizza p {
+            margin: 0 10px 10px 10px;
+            font-size: 14px;
+        }
+
+        .delivery, .localizacao, .contato {
+            background-color: #ffe5d9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #d62828;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .pizza {
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Casa das Pizzas</h1>
+        <p>O sabor da tradição em Canoinhas - SC</p>
+    </header>
+
+    <nav>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="cardapio">
+            <h2>🍕 Nosso Cardápio</h2>
+            <div class="cardapio">
+                <div class="pizza">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg" alt="Pizza Margherita">
+                    <h3>Margherita</h3>
+                    <p>Molho de tomate, mussarela, tomate e manjericão fresco.</p>
+                </div>
+                <div class="pizza">
+                    <img src="https://cdn.pixabay.com/photo/2020/02/08/19/27/pizza-4835853_960_720.jpg" alt="Pizza Calabresa">
+                    <h3>Calabresa</h3>
+                    <p>Calabresa fatiada, cebola roxa, mussarela e orégano.</p>
+                </div>
+                <div class="pizza">
+                    <img src="https://cdn.pixabay.com/photo/2021/01/26/20/52/pizza-5953217_960_720.jpg" alt="Quatro Queijos">
+                    <h3>Quatro Queijos</h3>
+                    <p>Mussarela, gorgonzola, provolone e parmesão.</p>
+                </div>
+                <div class="pizza">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/29/18/51/pizza-3049981_960_720.jpg" alt="Frango com Catupiry">
+                    <h3>Frango com Catupiry</h3>
+                    <p>Frango desfiado, catupiry cremoso e orégano.</p>
+                </div>
+                <div class="pizza">
+                    <img src="https://cdn.pixabay.com/photo/2020/04/22/14/30/pizza-5079392_960_720.jpg" alt="Pizza Portuguesa">
+                    <h3>Portuguesa</h3>
+                    <p>Presunto, ovo, cebola, azeitona e pimentão.</p>
+                </div>
+                <div class="pizza">
+                    <img src="https://cdn.pixabay.com/photo/2022/09/13/13/15/pizza-7451961_960_720.jpg" alt="Pizza Doce">
+                    <h3>Chocolate com Morango</h3>
+                    <p>Pizza doce com creme de chocolate e morangos frescos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="delivery" class="delivery">
+            <h2>📦 Delivery</h2>
+            <p>Entregamos em toda a região central de Canoinhas - SC. Faça seu pedido pelo WhatsApp ou telefone!</p>
+            <ul>
+                <li>⏰ Horário: 18h às 23h, todos os dias</li>
+                <li>📱 WhatsApp: (47) 91234-5678</li>
+                <li>🚚 Taxa de entrega: R$5,00 para o centro e bairros próximos</li>
+            </ul>
+        </section>
+
+        <section id="localizacao" class="localizacao">
+            <h2>📍 Localização</h2>
+            <p>Estamos localizados no <strong>Centro de Canoinhas - SC</strong>.</p>
+            <p>📌 Rua das Pizzas, 123 - Centro, Canoinhas - SC</p>
+            <!-- Google Maps pode ser inserido aqui -->
+            <iframe 
+                src="https://www.google.com/maps?q=Canoinhas,SC&output=embed" 
+                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>📞 Contato</h2>
+            <p>Entre em contato para pedidos ou reservas:</p>
+            <ul>
+                <li>📞 Telefone: (47) 3344-5566</li>
+                <li>📱 WhatsApp: (47) 91234-5678</li>
+                <li>📧 Email: contato@casadaspizzas.com.br</li>
+                <li>📷 Instagram: <a href="#" target="_blank">@casadaspizzas</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Casa das Pizzas - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
